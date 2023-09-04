@@ -15,13 +15,13 @@ License, v. 2.0. If a copy of the MPL was not distributed with this
 file, You can obtain one at https://mozilla.org/MPL/2.0/.
 -->
 
-An all-in-one package for building a local MicroROS workspace supporting ROS2 on a Raspberry Pi PICO.
+An all-in-one package for building a local MicroROS workspace supporting ROS2 and flashing a ROS2 node on a Raspberry Pi PICO.
 
 These instructions were put together to get a new PICO microcontroller up-and-running and integrated into a larger ROS2 framework connected to a host server. The installation steps are tailored to a Linux system, but the Raspberry Pi company has a detailed [setup manual](https://datasheets.raspberrypi.com/pico/raspberry-pi-pico-c-sdk.pdf) for getting set up on multiple system types.
 
 ### Installation
 
-First of all, make sure you have at least [ROS2 Foxy](https://docs.ros.org/en/foxy/Installation.html) on Ubuntu 20.04 or [ROS2 Humble]((https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html) on Ubuntu 22.04 installed on your PC.
+First of all, make sure you have at least [ROS2 Foxy](https://docs.ros.org/en/foxy/Installation.html) on Ubuntu 20.04 or [ROS2 Humble](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html) on Ubuntu 22.04 installed on your PC.
 
 Make sure your packages are up-to-date.
 ```bash
@@ -95,7 +95,7 @@ Assuming the Pico is connected on `dev/ttyACM0`, pass that in as an argument for
 ```
 ros2 run micro_ros_agent micro_ros_agent serial --dev /dev/ttyACM0
 ```
-If access to the port is denied, you may need to allow read/write access and add yourself to the `tty` and `dialout` groups (necessary for commubnicating with USB peripheral devices).
+If access to the port is denied, you may need to allow read/write access and add yourself to the `tty` and `dialout` groups (necessary for communicating with USB peripheral devices).
 ```
 sudo chmod a+rw /dev/ttyACM0
 sudo usermod -a -G dialout $USER
