@@ -1,10 +1,7 @@
 ![banner](.images/banner-dark-theme.png#gh-dark-mode-only)
 ![banner](.images/banner-light-theme.png#gh-light-mode-only)
----
-title: README
-author: Jonathan Shulgach ([email](mailto:jshulgac@andrew.cmu.edu))
-date: September 2023
----
+
+
 
 <!-- License
 
