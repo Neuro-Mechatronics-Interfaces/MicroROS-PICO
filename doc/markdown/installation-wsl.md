@@ -14,7 +14,7 @@ sudo update-alternatives --install /usr/local/bin/usbip usbip /usr/lib/linux-too
 
 ### Connecting a device
 
-Using a Powersheel terminal as administrator enter the following command:
+Using a Powershell terminal as administrator enter the following command:
 ```bash
 usbipd wsl list - Note the BUS ID value for the USB device you want to attach to WSL
 ```
