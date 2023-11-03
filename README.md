@@ -21,7 +21,7 @@ These instructions were put together to get a new PICO microcontroller up-and-ru
 
 ### Installation
 
-First of all, make sure you have at least [ROS2 Foxy](https://docs.ros.org/en/foxy/Installation.html) on Ubuntu 20.04 or [ROS2 Humble](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html) on Ubuntu 22.04 installed on your PC.
+Make sure you have at least [ROS2 Foxy](https://docs.ros.org/en/foxy/Installation.html) on Ubuntu 20.04 or [ROS2 Humble](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html) on Ubuntu 22.04 installed on your PC. For Windows support, these install steps have been successfully tested with a [WSL](https://learn.microsoft.com/en-us/windows/wsl/install) (Ubuntu on Windows) session running on Windows 11 as well.
 
 Make sure your packages are up-to-date.
 ```bash
