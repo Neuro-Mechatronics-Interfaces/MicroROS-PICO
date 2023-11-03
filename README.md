@@ -71,12 +71,18 @@ source ~/.bashrc
 ```
 The Pico SDK depends on a few submodules which could take up quite a bit of space on your PC. If optimization isn't a concern, continue with the instalation. Otherwise you can delete folders from the `pico-sdk/lib/hw` path and remove the board types you won't be using.
 
+You may get a warning that the TinyUSB submodule isn't initialized yet. If so, navigate to the pico-sdk directory and initialize the submodule:
+```
+cd $HOME/micro_ros_ws/src/pico-sdk
+git submodule update --init
+```
+
 #### Install Pre-Compiled MicroROS Pico libraries
 Once the Pico SDK is ready, compile the example:
 
 ```bash
 git clone https://github.com/micro-ROS/micro_ros_raspberrypi_pico_sdk.git $HOME/micro_ros_ws/src/micro_ros_raspberrypi_pico_sdk
-cd src/micro_ros_raspberrypi_pico_sdk
+cd $HOME/micro_ros_ws/src/micro_ros_raspberrypi_pico_sdk
 mkdir build
 cd build
 cmake ..
