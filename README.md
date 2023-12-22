@@ -67,7 +67,12 @@ Create the firmware workspace that targets all the required code and tools
 # Create firmware step
 ros2 run micro_ros_setup create_firmware_ws.sh host
 ```
-
+Finally create the microROS agent package and source the workspace
+```bash
+ros2 run micro_ros_setup create_agent_ws.sh
+ros2 run micro_ros_setup build_agent.sh
+source install/local_setup.bash
+```
 ### Install Pico SDK
 Now let's get the latest stable release of the Pico SDK installed and configured:
 ```bash
